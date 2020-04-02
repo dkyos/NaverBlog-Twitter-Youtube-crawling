@@ -71,7 +71,7 @@ def crawling():
         # 컴퓨터 메모리 때문에 50 page씩 데이터를 저장하고 버퍼를 지운다.
         if temporary_storage_num % 50 == 0:
             dataframe = pd.DataFrame(data, columns=["title", "content"])
-            dataframe.to_csv('../data/naver_comment.csv', mode='a', encoding='cp949')
+            dataframe.to_csv('../data/naver_comment.csv', mode='a')
             data = []
             
         temporary_storage_num += 1
@@ -81,7 +81,7 @@ def crawling():
     print('Finish crawling')
     print('The data is being written to the csv file.')
     dataframe = pd.DataFrame(data, columns=["title", "url"])
-    dataframe.to_csv('../data/naver_comment.csv', mode='a', encoding='cp949')       
+    dataframe.to_csv('../data/naver_comment.csv', mode='a')
     print('Finish working')
 
     

@@ -67,7 +67,7 @@ def crawling():
     print('Finish crawling')
     print('The data is being written to the csv file.')
     dataframe = pd.DataFrame(data, columns=["content"])
-    dataframe.to_csv('../data/twitter_comment.csv', mode = 'a', encoding='cp949')
+    dataframe.to_csv('../data/twitter_comment.csv', mode = 'a')
     print('Finish working')
 
     

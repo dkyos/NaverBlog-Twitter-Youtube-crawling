@@ -1,1 +1,1 @@
-Please include 'chromedriver.exe' here.
+Please include 'chromedriver.exe' or 'chromedriver' here.
